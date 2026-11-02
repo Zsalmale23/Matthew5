@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Körtési Máté</title>
+    <style>
+
+        .colored h1 { color: #e74c3c; }
+        .colored h2 { color: #e67e22; }
+        .colored h3 { color: #f1c40f; }
+        .colored h4 { color: #2ecc71; }
+        .colored h5 { color: #3498db; }
+        .colored h6 { color: #9b59b6; }
+    </style>
+</head>
+<body>
+
+    <button class="color-btn" onclick="toggleColor()">Color</button>
+
+    <div id="names-container">
+        <h1>Körtési Máté</h1>
+        <h2>Körtési Máté</h2>
+        <h3>Körtési Máté</h3>
+        <h4>Körtési Máté</h4>
+        <h5>Körtési Máté</h5>
+        <h6>Körtési Máté</h6>
+    </div>
+
+    <script>
+        function toggleColor() {
+            const container = document.getElementById('names-container');
+            container.classList.toggle('colored');
+        }
+    </script>
+
+</body>
+</html>
